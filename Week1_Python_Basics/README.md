@@ -1,8 +1,8 @@
 # Week 1 - Python & Environment Setup
 
-*Intern: Bhaskar Mehta
-*Track: AI / ML Internship Program
-*Mentor: Anurag Sharma
+*Intern: Bhaskar Mehta <br>
+*Track: AI / ML Internship Program <br>
+*Mentor: Anurag Sharma <br>
 
 # What's in this folder
 - `exercises.py` — 20 beginner Python exercises (lists, dicts, loops, functions, file I/O, basic OOP).
