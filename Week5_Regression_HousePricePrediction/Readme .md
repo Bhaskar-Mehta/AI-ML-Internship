@@ -17,3 +17,7 @@
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 jupyter notebook Week5_Regression_HousePricePrediction.ipynb
 ```
+
+## Results
+- **Linear Regression (House Price):** R² ≈ 0.918, MAE ≈ $80,879, RMSE ≈ $100,444
+- **Logistic Regression (Breast Cancer):** strong accuracy on held-out test data; full confusion matrix and classification report in the notebook.
