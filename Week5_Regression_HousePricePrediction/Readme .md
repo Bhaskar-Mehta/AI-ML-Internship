@@ -6,3 +6,8 @@
 - Linear Regression from first principles: cost function + gradient descent, demoed from scratch on tiny fake data.
 - **Main project:** House Price Prediction using scikit-learn — full workflow: split → train → predict → evaluate.
 - Logistic Regression on a binary classification problem (Breast Cancer dataset).
+
+## Files
+- `Week5_Regression_HousePricePrediction.ipynb` — the main notebook (run top to bottom).
+- `data/USA_Housing.csv` — dataset used for the house price regression.
+  (The Breast Cancer dataset used for Logistic Regression is built into scikit-learn — no download needed.)
