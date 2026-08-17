@@ -11,3 +11,9 @@
 - `Week5_Regression_HousePricePrediction.ipynb` — the main notebook (run top to bottom).
 - `data/USA_Housing.csv` — dataset used for the house price regression.
   (The Breast Cancer dataset used for Logistic Regression is built into scikit-learn — no download needed.)
+
+## How to run
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+jupyter notebook Week5_Regression_HousePricePrediction.ipynb
+```
