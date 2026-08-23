@@ -9,3 +9,4 @@ This week focused on supervised classification algorithms — Decision Trees, Ra
 ```python
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv"
 ```
+Features: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, Age.
