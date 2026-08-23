@@ -29,3 +29,6 @@ Features: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Di
 | SVM | TBD | TBD | TBD | TBD |
  
 *(Table to be filled in with actual results after running the notebook.)*
+## Best Model
+ 
+**TBD** — will be updated based on which model scores highest on F1-score, with a short explanation of why it performed best.
