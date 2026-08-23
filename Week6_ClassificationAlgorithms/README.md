@@ -38,3 +38,6 @@ Features: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Di
 - pandas, NumPy
 - scikit-learn (DecisionTreeClassifier, RandomForestClassifier, KNeighborsClassifier, SVC)
 - matplotlib, seaborn
+## Next Up
+ 
+Week 7: cross-validation and hyperparameter tuning to validate and improve on these results.
