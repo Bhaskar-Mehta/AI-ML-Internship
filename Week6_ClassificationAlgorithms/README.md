@@ -18,3 +18,14 @@ Features: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Di
 - **Day 4:** Implemented SVM and compared linear, RBF, and polynomial kernels
 - **Day 5:** Benchmarked all four models side by side using accuracy, precision, recall, and F1-score
 - **Day 6:** Compared confusion matrices across models and wrote a final recommendation
+
+## Models Compared
+ 
+| Model | Accuracy | Precision | Recall | F1-score |
+|---|---|---|---|---|
+| Decision Tree | TBD | TBD | TBD | TBD |
+| Random Forest | TBD | TBD | TBD | TBD |
+| KNN | TBD | TBD | TBD | TBD |
+| SVM | TBD | TBD | TBD | TBD |
+ 
+*(Table to be filled in with actual results after running the notebook.)*
