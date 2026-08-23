@@ -6,3 +6,6 @@ This week focused on supervised classification algorithms — Decision Trees, Ra
 ## Dataset
  
 **Pima Indians Diabetes Dataset** — binary classification (diabetic / not diabetic), loaded directly from a public URL (no CSV file stored in this repo):
+```python
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv"
+```
