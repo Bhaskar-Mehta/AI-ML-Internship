@@ -27,23 +27,23 @@ url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-
 
 | Model | Single Split F1 (Week 6) | 5-fold CV Mean F1 |
 |---|---|---|
-| Decision Tree | TBD | TBD |
+| Decision Tree | 0.7037 | 0.6396 (std 0.0337) |
 
-*(Table to be filled in with actual results after running the notebook.)*
+The single train/test split overestimated performance — the 5-fold CV mean (0.64) is noticeably lower than the single split score (0.70), meaning the original Week 6 split happened to be a favorable one and wasn't fully representative of how the model performs on average.
 
 ## Before vs After Tuning
 
 | Model | Week 6 F1 (before) | Week 7 F1 (after tuning) | Improvement |
 |---|---|---|---|
-| Decision Tree | TBD | TBD | TBD |
-| Random Forest | TBD | TBD | TBD |
-| SVM | TBD | TBD | TBD |
+| Decision Tree | 0.7037 | 0.5275 | -0.1762 |
+| Random Forest | 0.6139 | 0.6531 | +0.0392 |
+| SVM | 0.6346 | 0.6000 | -0.0346 |
 
-*(Table to be filled in with actual results after running the notebook.)*
+Tuning only improved Random Forest. Decision Tree and SVM actually got worse — likely because GridSearchCV optimizes for the best *cross-validated* score on the training folds, and combined with the Day 2 feature engineering (replacing invalid zeros with medians), the models are now being evaluated on a cleaned test set that isn't directly comparable to the original Week 6 test set. This is a useful reminder that "improvement" from tuning isn't guaranteed and needs to be checked against a fair baseline.
 
 ## Best Tuned Model
 
-**TBD** — will be updated with the best-performing tuned model, its parameters, and F1-score.
+**Random Forest** — F1 = 0.6531, the only model that improved after tuning and feature engineering. It benefited most from the median-imputed data and the wider hyperparameter search (`n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`), since ensembles generally gain more from additional trees/depth options than a single Decision Tree does.
 
 ## Tools Used
 
