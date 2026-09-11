@@ -17,11 +17,11 @@ This week covered two areas of machine learning not touched before: unsupervised
 
 | Metric | Score |
 |---|---|
-| Silhouette score | TBD |
-| Adjusted Rand Index (vs true labels) | TBD |
+| Silhouette score | 0.2848 |
+| Adjusted Rand Index (vs true labels) | 0.8974 |
 | PCA total variance captured (2 components) | 55.4% (PC1: 36.2%, PC2: 19.2%) |
 
-The K-Means clusters lined up closely with the true wine classes in PCA space, with some overlap between two of the three clusters — expected given the 2D view only captures ~55% of the original variance.
+The silhouette score is on the lower side, meaning the clusters aren't extremely tight or well-separated in the full 13-dimensional space. But the adjusted rand index of 0.90 shows the K-Means clusters almost perfectly matched the true wine cultivars — a strong result, and visually confirmed by the PCA scatter plot where the three clusters were clearly grouped.
 
 ## Notebook 2: `sentiment_analysis.ipynb`
 
@@ -35,14 +35,12 @@ The K-Means clusters lined up closely with the true wine classes in PCA space, w
 
 | Model | Accuracy |
 |---|---|
-| Logistic Regression | TBD |
-| Naive Bayes | TBD |
-
-*(Table to be filled in with actual results after running the notebook.)*
+| Logistic Regression | 0.8125 |
+| Naive Bayes | 0.7825 |
 
 ## Best Model
 
-**TBD** — will be updated with whichever classifier performed best, along with a short explanation of why.
+**Logistic Regression** — accuracy of 81.25% vs 78.25% for Naive Bayes, with slightly more balanced precision and recall across both classes. That said, testing the pipeline on short custom sentences (Day 5) revealed a limitation: it misclassified a clearly positive review as negative. This is likely because the model was trained on full-length professional movie reviews, and TF-IDF weighting on short, simple sentences doesn't carry the same signal — a good reminder that test-set accuracy doesn't always guarantee real-world reliability on inputs that look different from the training data.
 
 ## Tools Used
 
