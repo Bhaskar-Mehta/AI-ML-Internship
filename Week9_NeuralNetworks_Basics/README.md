@@ -38,13 +38,17 @@ Trained with Binary Cross-Entropy loss and the Adam optimizer over 100 epochs.
 |---|---|
 | Decision Tree (Week 6) | 0.7037 |
 | Random Forest, tuned (Week 7) | 0.6531 |
-| Neural Network (Week 9) | TBD |
+| Neural Network (Week 9) | 0.5490 |
 
-*(Table to be filled in with the actual neural network result after running the notebook.)*
+Accuracy for the neural network was 0.7013, but F1-score lagged behind both classical models — driven by weak recall (0.52) on the diabetic class. The network is much better at identifying non-diabetic cases (recall 0.80) than diabetic ones.
 
 ## How It Works (In My Own Words)
 
-TBD — will be filled in with a plain-language explanation of the training process once the notebook has been run and the results are in.
+I built a simple feedforward neural network with 2 hidden layers (16 neurons, then 8 neurons) using ReLU activation, and a final output neuron with Sigmoid activation to produce a probability between 0 and 1.
+
+During training, the network makes a prediction, compares it to the real answer using binary cross-entropy loss, then uses backpropagation to figure out how much each weight contributed to the error. The Adam optimizer then nudges every weight slightly to reduce that error, repeating this over 100 epochs.
+
+The neural network underperformed both classical models from Week 6/7 on F1-score. This is a common result on small tabular datasets like this one (~770 rows): neural networks typically need more data to learn patterns that simpler models like decision trees can already capture efficiently from a small sample. It's a useful, realistic finding — bigger or more complex models don't automatically mean better results, especially on small data.
 
 ## Tools Used
 
